@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartwasp.assistant.pushservice.widgets.ShadowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shadowColor="#19000000"
+    app:shadowDx="0dp"
+    app:shadowDy="4dp"
+    app:shadowRadius="8dp"
+    app:shadowSide="bottom"
+    tools:layout_height="76dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:tint="@android:color/darker_gray"
+            android:src="@android:drawable/stat_notify_sync"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/notification_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="发现有新版本升级，点击更新跳转更新界面" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notification_negative_action"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:text="忽略" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notification_positive_action"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:text="更新" />
+
+    </LinearLayout>
+</com.smartwasp.assistant.pushservice.widgets.ShadowLayout>

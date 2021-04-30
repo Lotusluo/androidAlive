@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">小黄蜂服务core</string>
+    <string name="fota_update_top">发现有新版本:%s，点击更新跳转更新界面</string>
+</resources>
